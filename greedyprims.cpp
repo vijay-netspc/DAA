@@ -4,7 +4,7 @@
 #include<queue>
 #include<climits>
 using namespace std;
-void prims(int V,vector<bool>&visited,vector<int>&parent,vector<vector<pair<int ,int>>> &adjlist){
+void prims(int V,vector<bool>&visited /*visited arrayis not needed*/,vector<int>&parent,vector<vector<pair<int ,int>>> &adjlist){
     priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
     //important
     vector<int> key(V,INT_MAX);
